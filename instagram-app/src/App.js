@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import dummyData from './dummy-data';
 import PostContainer from './components/PostContainer/PostContainer'
+import ProfileList from './components/PostContainer/ProfileList';
 
 class App extends React.Component {
   constructor() {
@@ -12,8 +13,8 @@ class App extends React.Component {
   }
 
   render () {
-    return <div className="App">
-      <PostContainer profiles={this.state.profiles} />
+    return <div className="App appWrapper">
+      <ProfileList profiles={this.state.profiles} />
     </div>
   };
 }

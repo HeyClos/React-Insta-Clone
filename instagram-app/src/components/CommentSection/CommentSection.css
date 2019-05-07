@@ -1,0 +1,11 @@
+.commentSection {
+    display: flex;
+    flex-direction: column;
+}
+.comment {
+    display: flex;
+}
+
+.username {
+    font-weight: bold;
+}
