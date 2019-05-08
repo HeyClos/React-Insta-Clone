@@ -8,13 +8,14 @@ const ProfileList = props => {
     <div>
       <PostHeader />
       {props.profiles.map((profile, index) => (
-        <PostContainer key={index}
+        <PostContainer index={index}
         comments={profile.comments}
         imageUrl={profile.imageUrl}
         likes={profile.likes} 
         thumbnailUrl={profile.thumbnailUrl}
         timestamp={profile.timestamp}
-        username={profile.username}/>
+        username={profile.username}
+        addComment={props.addComment}/>
       ))}
     </div>
   );

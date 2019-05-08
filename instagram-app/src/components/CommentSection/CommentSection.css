@@ -9,3 +9,7 @@
 .username {
     font-weight: bold;
 }
+
+.timeStampContainer {
+    display: flex;
+}

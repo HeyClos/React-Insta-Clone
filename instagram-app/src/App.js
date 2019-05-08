@@ -12,9 +12,29 @@ class App extends React.Component {
     };
   }
 
+  addComment = (e, comment, index) => {
+    e.preventDefault();
+    const newComment =  {
+      username: "carlos",
+      text: comment
+    };
+
+    const newData = [
+      ...this.state.profiles
+    ]
+
+    newData[index].comments = [
+      ...newData[index].comments, newComment
+    ]
+
+    this.setState({ 
+      profiles: newData, 
+    });
+  };
+
   render () {
     return <div className="App appWrapper">
-      <ProfileList profiles={this.state.profiles} />
+      <ProfileList profiles={this.state.profiles} addComment={this.addComment}/>
     </div>
   };
 }

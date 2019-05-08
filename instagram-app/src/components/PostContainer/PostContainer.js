@@ -7,7 +7,7 @@ const PostContainer = props => {
   return (
     <div>
         <PostHeader thumbnailUrl={props.thumbnailUrl} username={props.username} imageUrl={props.imageUrl} />
-        <CommentSection comments={props.comments}/>
+        <CommentSection comments={props.comments} timestamp={props.timestamp} addComment={props.addComment} index={props.index}/>
     </div>
   );
 };
