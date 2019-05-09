@@ -1,10 +1,11 @@
 import React from "react";
 import Comment from './Comment'
+import LikesSection from './LikesSection'
 
 
 class CommentSection extends React.Component {
     constructor(props) {
-      super();
+      super(props);
       this.state = {
           comment:''
       }
@@ -25,8 +26,11 @@ class CommentSection extends React.Component {
 
 
     render () {
+        //console.log(this.props)
         return (
             <div className="commentSection">
+
+                <LikesSection likes={this.props.likes} />
                 {this.props.comments.map( comment => {
                     return (
                         <Comment comment={comment}/>

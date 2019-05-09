@@ -3,6 +3,8 @@ import './App.css';
 import dummyData from './dummy-data';
 import PostContainer from './components/PostContainer/PostContainer'
 import ProfileList from './components/PostContainer/ProfileList';
+import SearchBar from './components/SearchBar/SearchBar'
+import styled from 'styled-components'
 
 class App extends React.Component {
   constructor() {
@@ -34,6 +36,7 @@ class App extends React.Component {
 
   render () {
     return <div className="App appWrapper">
+      <SearchBar />
       <ProfileList profiles={this.state.profiles} addComment={this.addComment}/>
     </div>
   };
