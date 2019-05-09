@@ -9,7 +9,17 @@ class SearchBar extends React.Component {
           comment:''
       }
     }
-
+    changeHandler = e => {
+        this.setState ({ comment: e.target.value })
+    }
+    
+    /*handleSubmit = e => {
+        e.preventDefault()
+        this.props.addComment(e, this.state.comment, this.props.index)
+        //my new state needs to go in the curly brackets underneath. is it e.target.value?
+        // comments + new comment?
+        this.setState({comment:''})
+    }*/
     render () {
         return (
             <div >
