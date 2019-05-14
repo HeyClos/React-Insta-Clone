@@ -7,6 +7,7 @@ const Comment = props => {
         <p>{props.comment.username}</p>
         <p>{props.comment.text} </p>
       </div>
+
     </div>
   )
 }

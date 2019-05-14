@@ -9,12 +9,16 @@ class CommentSection extends React.Component {
         }
     }
 
+    
     render() {
         return (
             <div>
                 {this.state.comments.map(comment => 
-                        <Comment comment={comment}/>
-                    )}
+                    <Comment comment={comment} />
+                )}
+                <form>
+                    <input placeholder="Add a comment..." />  
+                </form>               
             </div>
         )
     };
