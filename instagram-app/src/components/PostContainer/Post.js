@@ -1,4 +1,5 @@
 import React from 'react'
+import CommentSection from '../CommentSection/CommentSection'
 
 const Post = props => {
   return (
@@ -10,7 +11,15 @@ const Post = props => {
             </h1>
         </div>
 
-        <img src={props.imageUrl} />
+        <div>
+            <img src={props.imageUrl} />
+        </div>
+        
+        <div>
+            <CommentSection comments={props.comments} />
+        </div>
+
+        
     </div>
   )
 }
