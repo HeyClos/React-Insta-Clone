@@ -9,7 +9,7 @@ class CommentSection extends React.Component {
         }
     }
 
-    
+
     render() {
         return (
             <div>
@@ -25,3 +25,9 @@ class CommentSection extends React.Component {
 }
 
 export default CommentSection;
+
+{/* <form onSubmit = {this.handleSubmit}>
+<input placeholder={"Add a comment..."}
+value={this.state.comment}
+onChange={this.changeHandler} />
+</form> */}
