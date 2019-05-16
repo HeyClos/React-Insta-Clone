@@ -1,5 +1,6 @@
 import React from 'react'
 import CommentSection from '../CommentSection/CommentSection'
+import LikeSection from './LikeSection';
 
 const Post = props => {
   return (
@@ -16,7 +17,7 @@ const Post = props => {
         </div>
 
         <p>
-            {props.likes}
+            <LikeSection likes={props.likes} increment={props.increment} />
         </p>
         <div>
             <CommentSection comments={props.comments} />
@@ -29,4 +30,4 @@ const Post = props => {
   )
 }
 
-export default Post
+export default Post;

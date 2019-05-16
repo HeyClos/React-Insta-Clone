@@ -8,7 +8,11 @@ class CommentSection extends React.Component {
             comments: props.comments
         }
     }
-
+    handleInput = e => {
+        this.setState({
+            currentComment: {...this.state.currentComment, [e.target.name]: e.target.value}
+        })
+    }
 
     render() {
         return (
